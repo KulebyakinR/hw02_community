@@ -1,7 +1,6 @@
 
 from django.shortcuts import render
 from django.shortcuts import get_object_or_404
-
 from .models import Post
 from .models import Group
 
@@ -21,5 +20,5 @@ def group_list(request, slug):
         'group': group,
         'posts': posts,
     }
-    return render(request, 'posts/group_list.html', context) 
+    return render(request, 'posts/group_list.html', context)
     
